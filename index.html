@@ -3,122 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Портфоліо — Дмитро Кучмамбетов</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Лабораторна робота 4 - JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+      line-height: 1.6;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    main {
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    .info {
+      padding: 12px 16px;
+      background: #eaf3ff;
+      border-left: 4px solid #2b7de9;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    #output {
+      white-space: pre-wrap;
+      background: #111827;
+      color: #e5e7eb;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: Consolas, monospace;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <div class="page">
-    <header class="header" id="home">
-      <div class="logo">
-        <strong>Дмитро Кучмамбетов</strong>
-        <span>136 група</span>
-      </div>
+  <main>
+    <h1>Лабораторна робота 4</h1>
+    <h2>JavaScript: основи та логіка</h2>
 
-      <nav class="nav" aria-label="Головна навігація">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger" aria-label="Відкрити меню">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+    <div class="info">
+      <p><strong>Студент:</strong> Дмитро Кучмамбетов</p>
+      <p><strong>Група:</strong> 136</p>
+      <p>Результати виконання завдань виводяться у консоль браузера та дублюються нижче на сторінці.</p>
+    </div>
 
-        <ul class="nav-list">
-          <li><a class="nav-link" href="#home">Головна</a></li>
-          <li><a class="nav-link" href="#about">Про мене</a></li>
-          <li><a class="nav-link" href="#projects">Проєкти</a></li>
-          <li><a class="nav-link" href="#contacts">Контакти</a></li>
-        </ul>
-      </nav>
-    </header>
+    <h2>Результати:</h2>
+    <pre id="output"></pre>
+  </main>
 
-    <aside class="sidebar">
-      <section class="card small-card">
-        <h2>Інформація</h2>
-        <p><b>Студент:</b> Дмитро Кучмамбетов</p>
-        <p><b>Група:</b> 136</p>
-        <p><b>Тема:</b> CSS адаптивна верстка</p>
-      </section>
-
-      <section class="card small-card">
-        <h2>Навички</h2>
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS Grid</li>
-          <li>Flexbox</li>
-          <li>Media queries</li>
-        </ul>
-      </section>
-    </aside>
-
-    <main class="content">
-      <section class="hero section">
-        <div>
-          <h1>Сайт-портфоліо</h1>
-          <p>
-            Це адаптивна сторінка для лабораторної роботи №3. Макет створено за принципом Mobile First,
-            з використанням CSS Grid, Flexbox, змінних, анімацій та медіа-запитів.
-          </p>
-          <a class="button" href="#projects">Переглянути проєкти</a>
-        </div>
-      </section>
-
-      <section class="section" id="about">
-        <h2>Про мене</h2>
-        <p>
-          Мене звати Дмитро Кучмамбетов, я студент 136 групи. У цій роботі я показую базові навички
-          створення адаптивного сайту, який коректно виглядає на мобільних пристроях, планшетах та комп'ютерах.
-        </p>
-      </section>
-
-      <section class="section" id="projects">
-        <h2>Проєкти</h2>
-        <div class="projects-grid">
-          <article class="card project-card">
-            <div class="project-image">HTML</div>
-            <h3>Лабораторна робота 1</h3>
-            <p>Створення базової HTML-структури сторінки-портфоліо.</p>
-            <a class="card-link" href="#home">Детальніше</a>
-          </article>
-
-          <article class="card project-card">
-            <div class="project-image">CSS</div>
-            <h3>Лабораторна робота 2</h3>
-            <p>Оформлення сторінки за допомогою CSS та базових стилів.</p>
-            <a class="card-link" href="#home">Детальніше</a>
-          </article>
-
-          <article class="card project-card">
-            <div class="project-image">Grid</div>
-            <h3>Лабораторна робота 3</h3>
-            <p>Адаптивна верстка з CSS Grid, Flexbox, media queries та анімаціями.</p>
-            <a class="card-link" href="#home">Детальніше</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="contacts">
-        <h2>Контакти</h2>
-        <form class="contact-form">
-          <label>
-            Ім'я
-            <input type="text" placeholder="Ваше ім'я">
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="example@email.com">
-          </label>
-          <label>
-            Повідомлення
-            <textarea rows="4" placeholder="Ваше повідомлення"></textarea>
-          </label>
-          <button class="button" type="button">Надіслати</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>© 2026 Дмитро Кучмамбетов, 136 група</p>
-    </footer>
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
